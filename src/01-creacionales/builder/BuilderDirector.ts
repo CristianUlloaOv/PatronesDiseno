@@ -18,7 +18,7 @@ class BuilderDirector{
         this.builderCasa?.construirPisos(2);
         this.builderCasa?.construirPiscina(true);
         this.builderCasa?.construirGarage(true);
-        this.builderCasa?.construirPiscina(true);
+        this.builderCasa?.construirJardin(true);
     }
 
     public tipoCasa2(){
@@ -27,12 +27,13 @@ class BuilderDirector{
         this.builderCasa?.construirPisos(1);
         this.builderCasa?.construirPiscina(false);
         this.builderCasa?.construirGarage(false);
-        this.builderCasa?.construirPiscina(false);
+        this.builderCasa?.construirJardin(false);
     }
 }
 
 export function main() {
 
+    //Ejemplo con director 
     const builder = new Builder();
     const director = new BuilderDirector(builder);
 
@@ -43,6 +44,17 @@ export function main() {
     director.tipoCasa2();
     const casa2 = builder.obtenerCasa();
     casa2?.mostrarCasa();
+
+    //Ejemplo sin director y directo con el builder
+    builder.reiniciar();
+    builder.construirEstructura("Ladrillo");
+    builder.construirPisos(5);
+    builder.construirGarage(true);
+    builder.construirPiscina(true);
+    builder.construirJardin(false);
+    const casa3 = builder.obtenerCasa();
+    casa3?.mostrarCasa();
+
 
 
   

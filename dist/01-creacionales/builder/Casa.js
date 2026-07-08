@@ -30,6 +30,7 @@ class Casa {
             Pisos: ${this.pisos}
             Piscina: ${this.piscina}
             Garage: ${this.garage}
+            Jardin: ${this.jardin}
         `);
     }
 }
