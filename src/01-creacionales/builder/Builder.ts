@@ -1,8 +1,8 @@
-import { BuilderCasa } from "./BuilderCasa";
+import { BuilderCasaInterface } from "./BuilderCasa.interface";
 import { Casa } from "./Casa";
 
 
-export class Builder implements BuilderCasa{
+export class Builder implements BuilderCasaInterface{
     private resultado?: Casa;
 
     //Método clasico en patron builder

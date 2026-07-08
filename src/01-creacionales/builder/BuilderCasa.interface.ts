@@ -1,4 +1,4 @@
-export interface BuilderCasa {
+export interface BuilderCasaInterface {
   reiniciar(): void;
   construirEstructura(estructura: string): void;
   construirPisos(pisos: number): void;

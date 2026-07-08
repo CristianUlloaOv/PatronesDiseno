@@ -1,14 +1,14 @@
 import { Builder } from "./Builder";
-import { Casa } from "./Casa";
+import { BuilderCasaInterface } from "./BuilderCasa.interface";
 
 class BuilderDirector{
-    private builderCasa?: Builder;
+    private builderCasa?: BuilderCasaInterface;
 
-    constructor(builderCasa: Builder){
+    constructor(builderCasa: BuilderCasaInterface){
         this.builderCasa = builderCasa;
     }
 
-    private changeBuilder(builderCasa: Builder): void{
+    private changeBuilder(builderCasa: BuilderCasaInterface): void{
         this.builderCasa = builderCasa;
     }
 
