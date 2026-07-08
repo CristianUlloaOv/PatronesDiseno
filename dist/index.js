@@ -1,3 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("HELLO WORLD!!!");
+const BuilderDirector_1 = require("./01-creacionales/builder/BuilderDirector");
+(0, BuilderDirector_1.main)();
