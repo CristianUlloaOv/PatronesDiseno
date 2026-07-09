@@ -31,7 +31,7 @@ class BuilderDirector{
     }
 }
 
-export function main() {
+export function mainBuilder() {
 
     //Ejemplo con director 
     const builder = new Builder();
@@ -55,8 +55,4 @@ export function main() {
     const casa3 = builder.obtenerCasa();
     casa3?.mostrarCasa();
 
-
-
-  
- 
 }

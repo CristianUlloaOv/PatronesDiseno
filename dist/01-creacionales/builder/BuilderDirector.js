@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.main = main;
+exports.mainBuilder = mainBuilder;
 const Builder_1 = require("./Builder");
 class BuilderDirector {
     builderCasa;
@@ -27,7 +27,7 @@ class BuilderDirector {
         this.builderCasa?.construirJardin(false);
     }
 }
-function main() {
+function mainBuilder() {
     //Ejemplo con director 
     const builder = new Builder_1.Builder();
     const director = new BuilderDirector(builder);
